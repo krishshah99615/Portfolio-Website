@@ -12,7 +12,7 @@
     <link href="static/css/material-kit.css" rel="stylesheet" />
 </head>
 
-<body class="profile-page sidebar-collapse">
+<body class="profile-page sidebar-collapse" data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-transparent navbar-expand-lg fixed-top navbar-color-on-scroll " color-on-scroll="100"
         id="sectionsNav">
 
@@ -30,13 +30,13 @@
             <div class="collapse navbar-collapse" id="example-navbar-transparent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#pablo" class="nav-link">
+                        <a href="#desc" class="nav-link">
 
                             About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#pablo" class="nav-link">
+                        <a href="#blogs" class="nav-link">
 
                             Project
                         </a>
@@ -69,7 +69,7 @@
                                 <img src="static/img/krish.jpg" alt="Profile Image"
                                     class="img-raised rounded-circle img-fluid" style="width: 150px;height: 150px;">
                             </div>
-                            <div class="name">
+                            <div class="name" id="desc">
                                 <h3 class="title">Krish Shah</h3>
                                 <h6>ML Engineer</h6>
                                 <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i
@@ -83,7 +83,8 @@
                     </div>
                 </div>
                 <div class="description text-center">
-                    <p>My name is Krish, I'm Machine Learning Engineer and I have more than 2 years of experience. I'm
+                    <p style="color:black;">My name is Krish, I'm Machine Learning Engineer and I have more than 2
+                        years of experience. I'm
                         able
                         to create and deploy ML Models Web apps on CLoud. My
                         skills as Machine Learning Engineer are : Tensorflow / Keras / Natural Language Processing /
@@ -115,10 +116,8 @@
                                                     <a href="#pablo">Sarcasm Detection - News Headlines</a>
                                                 </h3>
                                                 <p class="card-description">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-                                                    doloribus. Nam facere aperiam veritatis asperiores mollitia veniam
-                                                    soluta tenetur. Odit itaque officiis delectus nostrum quia cum
-                                                    expedita commodi fuga similique. …
+                                                    Flask Web app detecting sarcasm in the news headline using LSTM
+                                                    Network and NLP...
                                                     <a href="#pablo"> Read More </a>
                                                 </p>
                                                 <p class="author">
@@ -144,10 +143,8 @@
                                                     <a href="#pablo">Skin Cancer Classification</a>
                                                 </h3>
                                                 <p class="card-description">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                    Reprehenderit quasi natus ratione necessitatibus rerum in impedit
-                                                    corporis est ut atque dicta pariatur, enim tempore nemo earum
-                                                    adipisci! Cum, iste autem? and…
+                                                    Django Web app Classifying Kind of Skin Cancer using CNN .Classifies
+                                                    various kind such as Malignant..
                                                     <a href="#pablo"> Read More </a>
                                                 </p>
                                                 <p class="author">
@@ -168,6 +165,70 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="card card-plain card-blog">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="card-header card-header-image">
+                                                    <a href="#pablito">
+                                                        <img class="img" src="static/img/project_3.jpg">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <h6 class="card-category text-info">Finance</h6>
+                                                <h3 class="card-title">
+                                                    <a href="#pablo">Portfolio Optimization</a>
+                                                </h3>
+                                                <p class="card-description">
+                                                    A Web App That Helps u find the best allocation of ur asset in the
+                                                    desired company...
+                                                    <a href="#pablo"> Read More </a>
+                                                </p>
+                                                <p class="author">
+                                                    by
+                                                    <a href="#pablo">
+                                                        <b>Krish Shah</b>
+                                                    </a>, Feb 2020
+                                                    <div class="row">
+                                                        <button class="btn btn-sm btn-primary">View Project</button>
+                                                        <button class="btn  btn-sm btn-info">Source Code</button>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card card-plain card-blog">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h6 class="card-category text-danger">
+                                                    Natural Language Processing
+                                                </h6>
+                                                <h3 class="card-title">
+                                                    <a href="#pablo">Poetry Generation</a>
+                                                </h3>
+                                                <p class="card-description">
+                                                    You got some line? This web app will create poem about any length u
+                                                    want!...
+                                                    <a href="#pablo"> Read More </a>
+                                                </p>
+                                                <p class="author">
+                                                    by
+                                                    <a href="#pablo">
+                                                        <b>Krish Shah</b>
+                                                    </a>, Jan 2019
+                                                    <div class="row">
+                                                        <button class="btn btn-sm btn-warning">View Project</button>
+                                                        <button class="btn  btn-sm btn-danger">Source Code</button>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="card-header card-header-image">
+                                                    <img class="img img-raised" src="static/img/project_4.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +245,9 @@
             <div class="nav-tabs-wrapper">
                 <ul class="nav nav-pills " data-tabs="tabs">
                     <li class="nav-item">
-                        <a class="nav-link active show" href="#profile" data-toggle="tab">
+                        <a class="nav-link active show"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=krishshah99615@gmail.com&su=Hello&shva=1"
+                            data-toggle="tab">
                             Lets Build Together
                         </a>
                     </li>
